@@ -1,0 +1,115 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+body{
+    background: #49243E;
+}
+header,footer{
+    width: 100%;
+    height: 10%;
+}
+h1{
+    width: 100%;
+    color:#BB8493;
+    text-shadow: 1px 1px white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 80px;
+}
+#subtitulo{
+    text-align: center;
+    color:white;
+    font-size: 60px;
+    margin:10px;
+}
+.contenedor{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5px;
+}
+.contenedor-imagenes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+img{
+    align-self: center;
+    margin:10px;
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(1px 5px 30px #ff204daf);
+}
+#numeroadivinado{
+    color:#A0153E;
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow: 1px 1px white;
+    margin:20px
+}
+.numeroadivina2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.contenido-botones{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom:60px;
+}
+button{
+    font-size: 30px;
+    background: #FF8E8F;
+    border: 2px solid rgb(215, 128, 236);
+    border-radius: 20px ;
+    padding:5px 5px;
+}
+button:hover{
+    cursor:pointer;
+    letter-spacing: .15em;
+    border:4px solid #FF204E;
+    background: #FFF3C7;
+}
+footer{
+    height: auto;
+    position:fixed;
+    bottom:0px;
+    background: #FFF3C7;
+    margin-bottom: 0%;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #8502b0;
+}
+@media (max-width:440px){
+    h1{
+        font-size: 60px;
+    }
+    #subtitulo{
+        font-size: 40px;
+        margin:10px;
+    }
+    #numeroadivinado{
+        font-size: 70px;
+        text-shadow: 1px 1px white;
+        margin:20px
+    }
+    img{
+        margin:5px;
+        width: 200px;
+    }
+    .contenido-botones{
+        flex-direction: column;
+        margin-bottom:30px;
+        gap: 4px;
+    }
+}

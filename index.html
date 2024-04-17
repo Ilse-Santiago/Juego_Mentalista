@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Numero Secreto</title>
+</head>
+<body>
+    <header>
+        <h1>Mentalista</h1>
+    </header>
+    <main>
+        <section class="contenedor">    
+            <p id="subtitulo">Piensa un número del 1 al 10 y lo adivinare</p>
+            <div class="contenedor-imagenes">
+                <img id="bola-Cristal" src="./img/cristal ball.png">
+                <img id="ganador" src="./img/winning-robot.png" hidden>
+            </div>
+           
+            <p class="numeroadivina2"><span id="numeroadivinado"></span></p>
+
+            <div class="contenido-botones">
+                <button id="boton-comenzar" onclick="comenzar()">Listo</button>
+                <button id="boton-si" onclick="acertado()" hidden>Sí, adivinaste🥇</button>
+                <button id="boton-mayor" onclick="numeroMayor()" hidden>es mayor⬆️</button>
+                <button id="boton-menor" onclick="numeroMenor()" hidden>es menor⬇️</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="reiniciar" onclick="reiniciarJuego()" hidden>Volver a Jugar</button>
+        <p id="pie-pag">By Boopsy🌸</p>
+    </footer>      
+      
+</body>
+</html>
